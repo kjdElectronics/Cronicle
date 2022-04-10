@@ -29,6 +29,7 @@ process.chdir( path.dirname( __dirname ) );
 
 // make sure we have a logs dir
 if (!fs.existsSync("logs")){
+	console.log("MAKING LOGS DIR");
 	mkdirp.sync( 'logs' );
 	fs.chmodSync( 'logs', "755" );
 }
