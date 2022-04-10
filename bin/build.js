@@ -4,7 +4,7 @@
 // Copies, symlinks and compresses files into the right locations.
 // Can also compact & bundle JS/CSS together for distribution.
 // Copyright (c) 2015 Joseph Huckaby, MIT License.
-
+console.log("BUILD.js...");
 var fs = require('fs');
 var path = require('path');
 var util = require('util');
