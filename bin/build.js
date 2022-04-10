@@ -28,7 +28,7 @@ if (setup.build[mode]) {
 process.chdir( path.dirname( __dirname ) );
 
 // make sure we have a logs dir
-if (!fs.existsSync("./directory-name")){
+if (!fs.existsSync("logs")){
 	mkdirp.sync( 'logs' );
 	fs.chmodSync( 'logs', "755" );
 }
