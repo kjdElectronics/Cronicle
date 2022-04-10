@@ -28,8 +28,10 @@ if (setup.build[mode]) {
 process.chdir( path.dirname( __dirname ) );
 
 // make sure we have a logs dir
-mkdirp.sync( 'logs' );
-fs.chmodSync( 'logs', "755" );
+if (!fs.existsSync("./directory-name")){
+	mkdirp.sync( 'logs' );
+	fs.chmodSync( 'logs', "755" );
+}
 
 // log to file instead of console
 console.log = function(msg, data) {
