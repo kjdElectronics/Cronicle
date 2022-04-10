@@ -15,9 +15,10 @@ var installer_version = '1.3';
 var base_dir = '/opt/cronicle';
 var log_dir = base_dir + '/logs';
 var log_file = '';
-var gh_repo_url = 'http://github.com/jhuckaby/Cronicle';
-var gh_releases_url = 'https://api.github.com/repos/jhuckaby/Cronicle/releases';
-var gh_head_tarball_url = 'https://github.com/jhuckaby/Cronicle/archive/master.tar.gz';
+console.log('KJD');
+var gh_repo_url = 'http://github.com/kjdelectronics/Cronicle';
+var gh_releases_url = 'https://api.github.com/repos/kjdelectronics/Cronicle/releases';
+var gh_head_tarball_url = 'https://github.com/kjdelectronics/Cronicle/archive/master.tar.gz';
 
 // don't allow npm to delete these (ugh)
 var packages_to_check = ['couchbase', 'aws-sdk', 'redis'];
